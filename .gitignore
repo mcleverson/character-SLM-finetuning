@@ -1,0 +1,40 @@
+# === MODELOS GIGANTES (não subir no GitHub) ===
+donald_lora_out/
+donald_lora_out_bkp/
+donald_duck_merged_model/
+
+# Outras pastas pesadas de IA
+models/
+checkpoints/
+loras/
+embeddings/
+vae/
+unet/
+weights/
+output/
+logs/
+runs/
+wandb/
+
+# Arquivos de treino pesados
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# HuggingFace cache
+huggingface/
+cache/
+HF_HOME/
+
+# Virtualenv
+.venv/
+env/
+venv/
+
+# Comfy outputs
+*.zip
+*.tar
+*.tar.gz
+*.7z
