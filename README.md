@@ -20,11 +20,19 @@ O objetivo deste projeto é demonstrar, na prática, como construir um **LLM est
 
 ## 🚀 Estrutura do Projeto
 src/
+
 ├── 1-generate_data.ipynb # Geração de dados sintéticos estilo Donald
+
 ├── 2-split_data.py # Separação do dataset (train/val)
+
 ├── 3-train_lora.ipynb # Treinamento do LoRA
+
 ├── 4-evaluate.ipynb # Avaliação com BLEU e outras métricas
+
 ├── 5-save_inference.ipynb # Testes de inferência
+
 ├── 6-install-llama-cpp.sh # Instalação do llama.cpp / ollama
+
 ├── 7-convert-gguf.sh # Conversão final do modelo
+
 └── donald_synthetic_data* # Datasets sintéticos usados no treino
