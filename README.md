@@ -1,24 +1,47 @@
-# 🦆 LLM Character Finetune  
-### Um experimento de criação de um modelo para falar como o **Pato Donald**, do zero ao resultado final usando a MAGALU CLOUD
+# 🦆 LLM Character Finetuning
 
-Este repositório contém **todo o pipeline que usei para treinar um modelo estilo Pato Donald**, incluindo:
+End-to-end pipeline to fine-tune a small LLM for **character-style text generation**, using synthetic data and LoRA.
 
-- geração de dados sintéticos de falas no estilo do personagem  
-- preparação e split do dataset ( testes e treinamento )  
-- treinamento LoRA com foco em estilo de texto  
-- avaliação com métricas como BLEU, ROUGE e perplexidade  
-- conversão final para GGUF para rodar localmente com llama.cpp / ollama  
-- testes de inferência com diferentes prompts  
-
-O objetivo deste projeto é demonstrar, na prática, como construir um **LLM estilizado**, capaz de gerar respostas textuais que imitam o "jeito de falar" do Pato Donald — sotaque, ritmo, expressões e padrões linguísticos.
-
-> ⚠️ **Importante:**  
-> O projeto utiliza **apenas dados sintéticos**, criados por mim unicamente para fins educacionais e de pesquisa.  
-> Não há uso de material protegido por direitos autorais.
+This project demonstrates how to build a stylized language model capable of reproducing specific linguistic patterns such as tone, rhythm, and expression style.
 
 ---
 
-## 🚀 Estrutura do Projeto
+## 💡 Overview
+
+This repository contains the full pipeline used to train a character-style LLM (inspired by Donald Duck), covering everything from data generation to local inference.
+
+The focus is not the character itself, but the **methodology to teach style to small language models**.
+
+---
+
+## ⚙️ What this project covers
+
+- Synthetic dataset generation for style imitation  
+- Dataset preparation and train/validation split  
+- LoRA fine-tuning focused on text style adaptation  
+- Model evaluation using BLEU, ROUGE and perplexity  
+- Conversion to GGUF format for local inference  
+- Inference testing with different prompts and scenarios  
+
+---
+
+## 🧠 Key Idea
+
+Instead of training large models, this project explores how **small models (Gemma 3B)** can be adapted to:
+
+- replicate linguistic style  
+- maintain consistency across responses  
+- run efficiently in local environments  
+
+---
+
+## 🏗️ Pipeline
+
+
+---
+
+## 📁 Project Structure
+
 src/
 
 ├── 1-generate_data.ipynb # Geração de dados sintéticos estilo Donald
@@ -36,3 +59,40 @@ src/
 ├── 7-convert-gguf.sh # Conversão final do modelo
 
 └── donald_synthetic_data* # Datasets sintéticos usados no treino
+
+
+---
+
+## 🧪 Use Cases
+
+- Character-style assistants  
+- Brand voice replication  
+- Persona-driven chatbots  
+- Style transfer experiments in LLMs  
+
+---
+
+## ⚠️ Notes
+
+- All training data is synthetic and generated for research purposes  
+- No copyrighted material was used  
+
+---
+
+## 🚀 Environment
+
+- Python  
+- LoRA (PEFT)  
+- Gemma 3B  
+- llama.cpp / Ollama  
+- Magalu Cloud (training environment)  
+
+---
+
+## 📌 Why this matters
+
+This project shows a practical approach to:
+
+- customizing LLM behavior without full fine-tuning  
+- reducing infrastructure cost  
+- enabling local-first AI applications  
