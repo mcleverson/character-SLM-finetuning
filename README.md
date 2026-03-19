@@ -1,4 +1,4 @@
-# 🦆 DonaldDuck LLM  
+# 🦆 LLM Character Finetune  
 ### Um experimento de criação de um modelo para falar como o **Pato Donald**, do zero ao resultado final usando a MAGALU CLOUD
 
 Este repositório contém **todo o pipeline que usei para treinar um modelo estilo Pato Donald**, incluindo:
